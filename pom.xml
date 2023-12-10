@@ -12,6 +12,7 @@
 		<sonar.organization>shop-electronics</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
+
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
@@ -23,6 +24,14 @@
 			</resource>
 		</resources>
 		<plugins>
+			<!-- Add other plugins -->
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.9.0.2155</version>
+			</plugin>
+
+
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
@@ -84,4 +93,6 @@
 			<version>1.15</version>
 		</dependency>
 	</dependencies>
+
+
 </project>
